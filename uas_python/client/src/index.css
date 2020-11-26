@@ -1,0 +1,103 @@
+
+
+:root {
+  --color-primary: #4BA8CE;
+  --color-primary-hover: #4091b3;
+  --color-secondary: #CEF1FF;
+  /* ============= Text =======================*/
+
+  --primary-text: rgba(0, 0, 0, 0.6);
+  --secondary-text: #787878;
+  --tertiary-text: #4BA8CE;
+  
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #fff;
+  --color-black: #000;
+   /* ============= END Text =======================*/
+
+
+  --primary-bg: #F5F7FF;
+ 
+}
+
+    
+*,
+*::after,
+*::before{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+  
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;   font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: var(--color-grey-dark);
+    font-display: swap;
+    height: 100vh;
+    background-color: red
+}
+
+.textToCenter{
+  text-align: center !important;
+}
+
+.iconFormLeft {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 15px;
+  color: #000
+}
+.iconFormRight{
+  position: absolute;
+  pointer-events: none;
+  right: 20px;
+  top: 15px;
+  color: #000;
+  cursor: pointer !important;
+}
+.active{
+  color: var(--color-primary) !important;
+}
+
+.ml-1{
+  margin-left: .5rem;
+}
+.ml-2{
+  margin-left: 2rem;
+
+}
+a{
+  text-decoration: none;
+}
+.heading-primary {
+  
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 20px;
+
+color: #000000; 
+}
+
+.MuiAppBar-root{
+  color: #ffff !important;
+  font-size: 3rem !important;
+}
+.MuiIcon-fontSizeLarge{
+  font-size: 1.6rem !important;
+}
+.download-table-xls-butto{
+  margin-left: 0;
+  color: red;
+}
