@@ -1,31 +1,31 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: post-depl
+  name: comment-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: posts
+      app: comments
   template:
     metadata:
       labels:
-        app: posts
+        app: comments
     spec:
       containers:
-      - name: posts
-        image: tegar900/microservice-post
+      - name: comments
+        image: tegar900/event-comments
        
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: post-clusterip-srv
+  name: comment-srv
 spec:
   selector:
-    app: posts
+    app: comments
   ports:
-    - name: posts
+    - name: comments
       protocol: TCP
-      port: 4005
-      targetPort: 4005
+      port: 4002
+      targetPort: 4002
